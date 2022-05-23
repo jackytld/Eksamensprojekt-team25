@@ -17,8 +17,24 @@ h4 {
     text-align: center;
     margin-top: 10px;
     color: white;
+    margin-bottom: 40px;
 }
 
 .klimamaal {
-    width: 500px;
+    width: 400px;
+    position: absolute;
+    left: 30%;
 }
+
+.slider-wrapper {
+    width: 33%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
