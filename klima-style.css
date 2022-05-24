@@ -3,14 +3,22 @@
     margin: 0;
 }
 
+html {
+    width: 100%;
+}
+
 body {
     background-color: #6BCA66;
+    margin: auto;
+    width: 100%;
+    font-family: Europa;
 }
 
 h2 {
     text-align: center;
     margin-top: 20%;
     color: white;
+    font-size: 80px;
 }
 
 h4 {
@@ -18,16 +26,16 @@ h4 {
     margin-top: 10px;
     color: white;
     margin-bottom: 40px;
+    font-size: 40px;
 }
 
 .klimamaal {
-    width: 400px;
-    position: absolute;
-    left: 30%;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .slider-wrapper {
-    width: 33%;
+    width: 335px;
     margin: auto;
     overflow: hidden;
   }
@@ -39,21 +47,49 @@ h4 {
 }
 
 #prevBtn {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 230px;
     z-index: 10;
-    left: 5%;
-    font-size: 30px;
+    font-size: 50px;
     color: white;
     cursor: pointer;
 }
 
 #nextBtn {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 230px;
     z-index: 10;
-    right: 5%;
-    font-size: 30px;
+    left: 230px;
+    font-size: 50px;
     color: white;
     cursor: pointer;
+}
+
+.laesmere {
+    display: inline-block;
+    background-color: #FFF;
+    border: 1px black;
+    text-align: center;
+    color:#6BCA66;
+    font-size: 30px;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 30px;
+    position: relative;
+    left: 35%;
+    bottom: 30px;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.linje {
+border: 1px solid white;
+width: 400px;
+margin-left: 30%;
+position: relative;
+background-color: #FFF;
 }
