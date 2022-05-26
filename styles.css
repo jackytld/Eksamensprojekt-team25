@@ -14,7 +14,11 @@
 .icons{
     display: flex;
     justify-content: space-evenly;
-   margin-top: 25px;
+    margin-top: 25px;
+    color: #bababa;
+}
+
+a {
     color: #bababa;
 }
 
@@ -23,5 +27,12 @@
 }
 
 
-/* Header */
+/* Tilbage knap */
 
+#return {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-size: 22px;
+    color: white;
+}
