@@ -1,0 +1,67 @@
+
+/*det basale*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #F1F8F8;
+  color: #003A44;
+  font-family: arial;
+}
+
+header {
+  background-color: #6BCA66;
+  padding: 50px;
+}
+
+h1 {
+  font-weight: bold;
+  color: #003A44;
+  font-family: arial;
+}
+
+h2 {
+  font-weight: bold;
+  color: #003A44;
+  font-family: arial;
+}
+
+p {
+  color: #003A44;
+  font-family: arial;
+  margin: 10px 0px;
+}
+
+/*det basale*/
+
+.beskrivelse {
+  margin: 50px;
+}
+
+.billede {
+  margin: 50px;
+}
+
+.billede > p {
+  font-weight: bold;
+}
+
+.kode {
+  margin: 50px;
+}
+
+
+.kode > p {
+  font-weight: bold;
+}
+
+img {
+  width: 500px;
+}
+
+.ikoner > .billede > img {
+  width: 80px;
+}

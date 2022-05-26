@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/Styleguide/styleguide.css">
+    <title>Style guide</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Style Guide</h1>
+    </header>
+
+    <main>
+
+      <div class="farver">
+
+        <div class="beskrivelse">
+          <h2>Farve koder</h2>
+          <p>Farverne der bruges, er taget ud fra ucl's design guide.</p>
+        </div>
+
+        <div class="billede">
+          <img src="images/styleguide/farver.JPG" alt="farvekoder">
+        </div>
+
+        <div class="kode">
+          <p>Brug rgb farvekoden i 'background-color' eller 'color' i css fil</p>
+          <ul>
+              <li>BAGGRUND #F1F8F8 (Columbia blue 20%)</li>
+              <li>IKONER #025560 (Midnight green 80%)</li>
+              <li>NAV & MENU #7499A3 (Midnight green 40%)</li>
+              <li>CTA #F58E76 (Terra cotta 100%)</li>
+              <li>LÅST #DDDDDD</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="ikoner">
+
+        <div class="beskrivelse">
+          <h2>Ikoner</h2>
+          <p>På appen/hjemmesiden bliver der brugt ikoner fx i menubar og til navigation. Alle ikonerne er ikoner de fleste kender til og har set før.</p>
+        </div>
+
+        <div class="billede">
+          <p>Hjem knap</p>
+          <img src="images/styleguide/Iconawesomehome.svg" alt="Hjem">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <pre>
+            &lt;img src="images/styleguide/Iconawesomehome.svg" alt="Hjem"&gt;
+          </pre>
+        </div>
+
+
+        <div class="billede">
+          <p>Kupon knap</p>
+          <img src="images/styleguide/Iconawesometicketalt.svg" alt="Kupon">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <pre>
+            &lt;img src="images/styleguide/Iconawesometicketalt.svg" alt="Kupon"&gt;
+          </pre>
+        </div>
+
+        <div class="billede">
+          <p>Sociale knap</p>
+          <img src="images/styleguide/Iconawesomeuserfriends.svg" alt="Sociale">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <pre>
+            &lt;img src="images/styleguide/Iconawesomeuserfriends.svg" alt="Sociale"&gt;
+          </pre>
+        </div>
+
+        <div class="billede">
+          <p>Tilbage knap</p>
+          <img src="images/styleguide/Iconioniciosarrowback.svg" alt="Tilbage">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <pre>
+            &lt;img src="images/styleguide/Iconioniciosarrowback.svg" alt="Tilbage"&gt;
+          </pre>
+        </div>
+
+        <div class="billede">
+          <p>Profil knap</p>
+          <img src="images/styleguide/Iconmaterialperson.svg" alt="Profil">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <pre>
+            &lt;img src="images/styleguide/Iconmaterialperson.svg" alt="Profil"&gt;
+          </pre>
+        </div>
+
+        <div class="billede">
+          <p>Samlemærker knap</p>
+          <img src="images/styleguide/trophy.svg" alt="Samlemærker">
+        </div>
+        <div class="kode">
+          <p>placer i html</p>
+          <pre>
+            &lt;img src="images/styleguide/trophy.svg" alt="Samlemærker"&gt;
+          </pre>
+        </div>
+
+
+      </div>
+
+      <div class="navigation">
+
+        <div class="beskrivelse">
+          <h2>Navigationsbare</h2>
+          <p>På appen/hjemmesiden har vi to navigationsbare. En i toppen og en i bunden. Den i toppen har en hjem og tilbage knad. Den i bunden har kuponer, sociale, profil og samlemærker knapper. I stedet for ord, vises der ikoner i vores navigationsbare. Navigationsbaren i bunden er sticky, så den sidder altid i bunden af skærmen også selvom man scroller.</p>
+        </div>
+
+
+
+        <div class="billede">
+          <p>Top navigationsbar</p>
+          <img src="images/styleguide/topnav.JPG" alt="Top navigationsbar">
+        </div>
+        <div class="kode">
+          <p>Html</p>
+          <pre>
+            &lt;nav class="navtop" id="navtop"&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/backarrowicon.svg" alt="Tilbage"&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/homeicon.svg" alt="Hjem"&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/nav&gt;
+          </pre>
+          <p>Css</p>
+          <pre>
+            .navtop {
+              top: 0;
+              width: 100%;
+              background-color: #7499A3;
+            }
+            nav ul {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              list-style: none;
+
+            }
+
+            nav ul li a img {
+              width: 100px;
+              height: 100px;
+              margin: 30px;
+            }
+          </pre>
+        </div>
+
+        <div class="billede">
+          <p>Bottom navigationsbar</p>
+          <img src="images/styleguide/bottomnav.JPG" alt="Bottom navigationsbar">
+        </div>
+        <div class="kode">
+          <p>Html</p>
+          <pre>
+            &lt;footer&gt;
+              &lt;nav class="nav" id="nav"&gt;
+                &lt;ul&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/couponicon.svg" alt="Kupon"&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/friendsicon.svg" alt="Venner"&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/profilicon.svg" alt="Profil"&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/badgeicon.svg" alt="Badge"&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/nav&gt;
+            &lt;/footer&gt;
+          </pre>
+          <p>Css</p>
+          <pre>
+            .nav {
+              position: fixed;
+              bottom: 0;
+              width: 100%;
+              background-color: #7499A3;
+            }
+
+            nav ul {
+              position: relative;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              list-style: none;
+
+            }
+
+            nav ul li a img {
+              width: 100px;
+              height: 100px;
+              margin: 30px;
+            }
+          </pre>
+          <p>Javascript</p>
+          <pre>
+            var nav = document.getElementById('nav');
+              window.onscroll = function () {
+
+                if(window.pageYOffset > 100) {
+
+                nav.style.position = "fixed";
+                nav.style.bottom = 0;
+
+              }else {
+                box.style.position = "absoulte";
+                box.style.bottom = 100;
+              }
+              }
+          </pre>
+        </div>
+        <div class="billede">
+          <p>Burger navigationsbar</p>
+          <img src="images/styleguide/burgernav.JPG" alt="Burger navigationsbar">
+        </div>
+
+        <div class="kode">
+          <p>Javascript</p>
+          <pre>
+            function toggleClassName() {
+              var sidebar = document.querySelector(".sidebar");
+              var toggle = document.querySelector(".toggle");
+              sidebar.classList.toggle("active");
+              toggle.classList.toggle("active");
+            }
+
+            window.addEventListener("scroll", function () {
+              var header = document.querySelector("header");
+              header.classList.toggle("sticky", window.scrollY > 0);
+            });
+          </pre>
+        </div>
+
+      </div>
+
+      <div class="typografi">
+
+        <div class="beskrivelse">
+          <h2>Typografi</h2>
+          <p>Typografien er taget ud fra ucl's design guide. Alt tekst har farvekoden #003A44 og er arial. Header 1 og 2 er bold, hvor normal brødtekst er normal i vægt.</p>
+        </div>
+
+        <div class="billede">
+          <img src="images/styleguide/typografi.JPG" alt="Typografi">
+        </div>
+
+        <div class="kode">
+          <p>Kode i css</p>
+          <pre>
+            h1 {
+              font-weight: bold;
+              color: #003A44;
+              font-family: arial;
+            }
+
+            h2 {
+              font-weight: bold;
+              color: #003A44;
+              font-family: arial;
+            }
+
+            p {
+              color: #003A44;
+              font-family: arial;
+            }
+          </pre>
+        </div>
+
+      </div>
+
+      <div class="taps">
+
+        <div class="beskrivelse">
+          <h2>Taps</h2>
+          <p>Der er inde under vores samlemærkeside, en tap-bar, med tre taps der sortere samlemærkerne.</p>
+        </div>
+
+        <div class="billede">
+          <img src="images/styleguide/taps.JPG" alt="Tabs">
+        </div>
+
+        <div class="kode">
+          <p>HTML</p>
+          <pre>
+            &lt;button class="tablink" onclick="openPage('Alle', this, '#D3ECEB')" id="defaultOpen"&gt;Alle&lt;/button&gt;
+            &lt;button class="tablink" onclick="openPage('Laest', this, '#D3ECEB')"&gt;Låste&lt;/button&gt;
+            &lt;button class="tablink" onclick="openPage('Optjent', this, '#D3ECEB')"&gt;Optjent&lt;/button&gt;
+
+              &lt;hr&gt;
+
+                &lt;div id="Alle" class="tabcontent"&gt;
+          </pre>
+
+          <p>CSS</p>
+          <pre>.tablink {
+            border-top-left-radius:2em;
+            border-top-right-radius:2em;
+            margin: -17px -100px 0px 0px;
+            background-color: #3E747F;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 25px 16px;
+            font-size: 25px;
+            width: 35%;
+            font-weight: bold;
+          }
+
+          .tabcontent {
+              color: white;
+              display: none;
+              padding: 100px 20px;
+              height: 100%;
+              font-weight: bold;
+            }
+
+          #Alle {background-color: #D3ECEB;}
+          #Laest {background-color: #D3ECEB;}
+          #Optjent {background-color: #D3ECEB;}
+
+          hr {
+              margin-top: 61px;
+              border: none;
+            }</pre>
+
+          <p>Javascript</p>
+          <pre>
+            function openPage(pageName,elmnt,color) {
+              let i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i &lt; tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i &lt; tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+              }
+              document.getElementById(pageName).style.display = "block";
+              elmnt.style.backgroundColor = color;
+            }
+
+            document.getElementById("defaultOpen").click();</pre>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </body>
+</html>
