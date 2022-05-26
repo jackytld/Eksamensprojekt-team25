@@ -18,7 +18,7 @@ h2 {
     text-align: center;
     margin-top: 20%;
     color: white;
-    font-size: 80px;
+    font-size: 32px;
 }
 
 h4 {
@@ -26,16 +26,15 @@ h4 {
     margin-top: 10px;
     color: white;
     margin-bottom: 40px;
-    font-size: 40px;
+    font-size: 16px;
 }
 
 .klimamaal {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
 }
 
 .slider-wrapper {
-    width: 335px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
   }
@@ -44,11 +43,13 @@ h4 {
     display: flex;
     width: 100%;
     height: auto;
+    margin-left: 60px;
 }
 
 #prevBtn {
     position: relative;
     top: 230px;
+    left: 35px;
     z-index: 10;
     font-size: 50px;
     color: white;
@@ -59,7 +60,7 @@ h4 {
     position: relative;
     top: 230px;
     z-index: 10;
-    left: 230px;
+    left: 313px;
     font-size: 50px;
     color: white;
     cursor: pointer;
@@ -71,14 +72,14 @@ h4 {
     border: 1px black;
     text-align: center;
     color:#6BCA66;
-    font-size: 30px;
-    padding: 20px;
-    padding-left: 80px;
-    padding-right: 80px;
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
     border-radius: 30px;
     position: relative;
-    left: 35%;
-    bottom: 30px;
+    left: 33%;
+    margin-bottom: 100px;
     font-weight: bold;
 }
 
@@ -88,8 +89,8 @@ a:link {
 
 .linje {
 border: 1px solid white;
-width: 400px;
-margin-left: 30%;
+width: 100px;
+margin: auto;
 position: relative;
 background-color: #FFF;
 }
