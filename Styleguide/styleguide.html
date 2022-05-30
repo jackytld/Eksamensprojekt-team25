@@ -167,25 +167,31 @@
           <p>Css</p>
           
           <pre>
-            .navtop {
-              top: 0;
+            .footer{
               width: 100%;
-              background-color: #7499A3;
-            }
-            nav ul {
-              position: relative;
+              height: 75px;
+              background-color: white;
+              color: #bababa;
+              box-shadow: 0px 0px 25px;
+              position: fixed;
+              bottom: 0;
+          
+          }
+          
+          .icons{
               display: flex;
-              justify-content: space-between;
-              align-items: center;
-              list-style: none;
-
-            }
-
-            nav ul li a img {
-              width: 100px;
-              height: 100px;
-              margin: 30px;
-            }
+              justify-content: space-evenly;
+              margin-top: 25px;
+              color: #bababa;
+          }
+          
+          a {
+              color: #bababa;
+          }
+          
+          #active{
+              color: #D97D54;
+          }
           </pre>
         </div>
 
@@ -195,112 +201,74 @@
 
         <div class="beskrivelse">
           <h2>Typografi</h2>
-          <p>Typografien er taget ud fra ucl's design guide. Alt tekst har farvekoden #003A44 og er arial. Header 1 og 2 er bold, hvor normal brødtekst er normal i vægt.</p>
+          <p>Typografien er inspireret ud fra nunito som fremgår af Schneider Electrics style guide, der er dog valgt at anvende Europa som typografi i stedet, idet den ligner og er universel for alle enheder:</p>
         </div>
 
         <div class="billede">
-          <img src="images/styleguide/typografi.JPG" alt="Typografi">
+          <img src="/images/typografi-ex.PNG" alt="Typografi">
         </div>
 
         <div class="kode">
           <p>Kode i css</p>
           <pre>
+
+            * {
+              font-family: Europa;
+          }
+
             h1 {
               font-weight: bold;
-              color: #003A44;
-              font-family: arial;
-            }
-
-            h2 {
-              font-weight: bold;
-              color: #003A44;
-              font-family: arial;
+              color: #FFF;
             }
 
             p {
-              color: #003A44;
-              font-family: arial;
+              color: #000;
             }
+
           </pre>
         </div>
 
       </div>
 
-      <div class="taps">
+      <div class="Knapper">
 
         <div class="beskrivelse">
-          <h2>Taps</h2>
-          <p>Der er inde under vores samlemærkeside, en tap-bar, med tre taps der sortere samlemærkerne.</p>
+          <h2>Knapper</h2>
+          <p>Størstedelen af knapper i appen, har runde kanter med grøn, sort eller hvid tekst.</p>
         </div>
 
         <div class="billede">
-          <img src="images/styleguide/taps.JPG" alt="Tabs">
+          <img src="/images/Group85.png" alt="Knapper">
         </div>
 
         <div class="kode">
           <p>HTML</p>
           <pre>
-            &lt;button class="tablink" onclick="openPage('Alle', this, '#D3ECEB')" id="defaultOpen"&gt;Alle&lt;/button&gt;
-            &lt;button class="tablink" onclick="openPage('Laest', this, '#D3ECEB')"&gt;Låste&lt;/button&gt;
-            &lt;button class="tablink" onclick="openPage('Optjent', this, '#D3ECEB')"&gt;Optjent&lt;/button&gt;
-
-              &lt;hr&gt;
-
-                &lt;div id="Alle" class="tabcontent"&gt;
+            &lt;a href="#"&gt;&lt;div class="laesmere"&gt;Find løsninger&lt;/div&gt;&lt;/a&gt;
           </pre>
 
           <p>CSS</p>
-          <pre>.tablink {
-            border-top-left-radius:2em;
-            border-top-right-radius:2em;
-            margin: -17px -100px 0px 0px;
-            background-color: #3E747F;
-            color: white;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 25px 16px;
-            font-size: 25px;
-            width: 35%;
-            font-weight: bold;
+          <pre>
+
+            .laesmere {
+              display: inline-block;
+              background-color: #FFF;
+              border: 1px solid black;
+              text-align: center;
+              color:#6BCA66;
+              font-size: 16px;
+              padding: 20px;
+              border-radius: 30px;
+              position: relative;
+              font-weight: bold;
+              margin-top: 10%;
+              margin-left: 33%;
+              margin-bottom: 30%;
           }
 
-          .tabcontent {
-              color: white;
-              display: none;
-              padding: 100px 20px;
-              height: 100%;
-              font-weight: bold;
-            }
+          </pre>
 
-          #Alle {background-color: #D3ECEB;}
-          #Laest {background-color: #D3ECEB;}
-          #Optjent {background-color: #D3ECEB;}
-
-          hr {
-              margin-top: 61px;
-              border: none;
-            }</pre>
-
-          <p>Javascript</p>
-          <pre>
-            function openPage(pageName,elmnt,color) {
-              let i, tabcontent, tablinks;
-              tabcontent = document.getElementsByClassName("tabcontent");
-              for (i = 0; i &lt; tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-              }
-              tablinks = document.getElementsByClassName("tablink");
-              for (i = 0; i &lt; tablinks.length; i++) {
-                tablinks[i].style.backgroundColor = "";
-              }
-              document.getElementById(pageName).style.display = "block";
-              elmnt.style.backgroundColor = color;
-            }
-
-            document.getElementById("defaultOpen").click();</pre>
-
+      
         </div>
 
       </div>
