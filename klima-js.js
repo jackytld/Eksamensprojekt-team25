@@ -39,3 +39,8 @@ carouselSlide.addEventListener('transitionend', function() {
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });
+
+//Arrays
+
+var emner = ["smarthome", "klimatips", "voresplanet", "sparel", "bæredygtig"];
+console.log(emner)
