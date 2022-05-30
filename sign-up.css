@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat';
+}
+
+.background-color {
+  background-color: #6bca66;
+}
+.second-bg-color {
+  background-color: #a5a6a6;
+}
+
+.background-image {
+  background-image: url(images/logo.png);
+  background-size: cover;
+  height: 380px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#white {
+  color: #ffff;
+}
+
+#icewhite {
+  color: #fff;
+}
+
+#dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  color: #fff;
+  opacity: 8;
+}
+
+.btn {
+  width: 50%;
+  text-align: center;
+  height: 35px;
+  border-bottom: 3px solid transparent;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.btn.active {
+  border-color: red;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a {
+  outline: none;
+  color: #ffff;
+}
+
+.container {
+  display: flex;
+}
+
+.container.actions {
+  flex-direction: row;
+  max-height: 450px;
+  overflow: hidden;
+  background-color: #6bca66;
+  padding: 30px 0;
+}
+
+.section {
+  min-width: 100%;
+  min-height: 250px;
+  transition: transform 250ms ease-in-out;
+  text-align: center;
+}
+
+.section.signup.active {
+  transform: translateX(0%);
+}
+
+.section.login.active {
+  transform: translateX(-100%);
+}
+
+.section.signup {
+  transform: translateX(-100%);
+}
+
+.section.login {
+  transform: translateX(100%);
+}
+
+.input {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px 4px;
+  border: 0;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+label {
+  text-align: left;
+  display: block;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: bold;
+}

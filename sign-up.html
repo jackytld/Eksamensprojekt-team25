@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sign-up.css">
+  <script src="https://kit.fontawesome.com/5ea20706d8.js" crossorigin="anonymous"></script>
+  <title>Login</title>
+</head>
+
+<body>
+
+  <div class="background-image"></div>
+  <div class="background-color">
+    <section>
+
+
+      <h1 id="white">Opret ny profil</h1>
+
+
+
+      <h2 id="icewhite"> Oplev Wiser flow. Vær en del af vores klima forum</h2>
+
+    </section>
+
+    <div class="container">
+
+      <div class="btn active" id="signup">
+        <button">Sign-up</button>
+      </div>
+      <div class="btn" id="login">
+        <button">Login</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container actions">
+    <div class="section signup active">
+      <label for="form-name">Indsæt navn</label>
+      <input class="input" id="form-name" type="text" placeholder="Navn">
+      <label for="form-number">Indsæt dit nummer</label>
+      <input class="input" id="form-number" type="number" placeholder="Mobil">
+      <label for="form-email">Indsæt Email</label>
+      <input class="input" id="form-email" type="email" placeholder="Email">
+      <label for="form-city">Indsæt by</label>
+      <input class="input" id="form-city" type="text" placeholder="By">
+      <label for="form-password">Indsæt adgangskode</label>
+      <input class="input" id="form-password" type="password" placeholder="Adgangskode">
+      <label for="form-checkpass">Gentag adgangskode </label>
+      <input class="input" id="form-checkpass" type="password" placeholder="Gentag adgangskode">
+
+    </div>
+    <div class="section login">
+      <label for="form-user">Brugernavn</label>
+      <input class="input" id="form-user" type="email" placeholder="Brugernavn">
+      <label for="form-login">Adgangskode</label>
+      <input class="input" id="form-login" type="password" placeholder="Adgangskode">
+    </div>
+  </div>
+  <script>
+[...document.getElementsByClassName("btn")].forEach((x) => x.addEventListener("click", () => {
+  [...document.getElementsByClassName("active")].forEach((old) => old.classList.remove("active"));
+
+  x.classList.add("active");
+  document.getElementsByClassName(`section ${x.id}`)[0].classList.add("active")
+}));
+  </script>
+</body>
+
+</html>
