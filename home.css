@@ -89,6 +89,7 @@ img{
       p{
           font-size: 12px;
           display: flex;
+          border: none;
       }
 
 
@@ -143,7 +144,6 @@ img{
     display: flex;
     justify-content: space-evenly;
    margin-top: 25px;
-    color: #bababa;
 }
 
 #active{
@@ -152,3 +152,9 @@ img{
 
 
 
+a:link {
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}

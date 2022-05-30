@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="elpriser.css">
-    <script type="text/javascript" src="main.js" defer></script>
     <script src="https://kit.fontawesome.com/5ea20706d8.js" crossorigin="anonymous"></script>
     <title>Elpriser</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="elpriser.css">
 </head>
 <body>
     
@@ -18,30 +18,108 @@
 
 <div class="stats">
 
-    <div class="dage"><p> I dag</p></div>
-    <div class="dage"><p> 2 dage</p></div>
-    <div class="dage"><p> 1 uge</p></div>
-    <div class="dage"><p> 3 uger</p></div>
+    <button id="btn" class="dage"><p> I dag</p></button>
+    <button id="updateChart" class="dage"><p> 2 dage</p></button>
+    <button id="updateChart" class="dage"><p> 1 uge</p></button>
+    <button id="updateChart" class="dage"><p> 3 uger</p></button>
     
 </div>
-
-<div class="chart">
-    <canvas id="mychart"></canvas>
     
-        </div>
-    
-        <script>
-    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" 
-    integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer"
-    </script>
 
+<div class="container">
+    <canvas id="myChart"></canvas>
+</div>
+
+
+<script>
+let myChart = document.getElementById('myChart').getContext('2d');
+
+
+
+let delayed; 
+
+
+//gradient 
+let gradient = myChart.createLinearGradient(0,0,0,400);
+gradient.addColorStop( 0, "rgba(58, 123, 213, 1");
+gradient.addColorStop(1, "rgba(0, 210, 255, 0.3)");
+
+let elChart = new Chart (myChart, {
+type: 'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+data:{
+    labels:['0.00', '0.2', '0.4', '0.6', '0.8', '10', '12', '14', '16', '18', '20', '22'],
+    datasets:[{
+label: 'Elpris',
+backgroundColor: gradient,
+pointBackgroundColor: "rgb(189, 195, 199)",
+hitRadius: 30,
+    radius: 3,
+    hoverRadius: 15,
+    repsonsive: true,
+   
+    scales: {
+      x: {
+        stacked: true,
+      },
+      y: {
+        stacked: true
+      }
+    },
+data:[
+
+2.00,
+1.97,
+2.09,
+2.32,
+2.14,
+2.02,
+1.72,
+1.55,
+2.02,
+2.04,
+1.88,
+1.75
+],
+
+    }]
+},
+options:{}
+
+
+
+}); 
+
+
+
+</script>
+
+
+<h1 class="undertitel">Forbrug</h1>
+
+<div class="info">
+<div class="gennemsnit">
+    <h2>Overblik</h2>
+    <div class="green">
+        <p id="kwh">175 øre kwh</p>
+    </div>
+</div>
+<div class="forbrug">
+<h2>Hvad bruger mest strøm?</h2>
+<img src="images/apparater.png" alt="">
+</div>
+
+</div>
+
+
+<a href="#" class="notification">
+    <span>Få notifikationer</span>
+    <span class="badge"></span>
+  </a>
 
 <div class="footer">
     <div class="icons">
-        <div> <i class="fa-solid fa-house fa-xl"></i> </div>
-        <div> <i class="fa-solid fa-bolt fa-xl"></i> </div>
+       <a href="home.html"><div> <i class="fa-solid fa-house fa-xl"></i> </div></a> 
+        <div id="active"> <i class="fa-solid fa-bolt fa-xl"></i> </div>
         <div> <i class="fa-solid fa-lightbulb fa-xl"></i> </div>
         <div> <i class="fa-solid fa-user fa-xl"></i> </div>
     

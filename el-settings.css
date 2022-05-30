@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.linje {
+    border: dashed 1px grey;
+    width: 350px;
+    margin: auto;
+    position: relative;
+    }
+
+p {
+    text-align: center;
+    font-size: 20px;
+    margin: 25px;
+}
+
+.container {
+    position: relative;
+    right: 15%;
+}
+
+p img {
+    margin-right: 10px;
+    position: relative;
+    top: 10px;
+}
+
+#rightarrow {
+    position: absolute;
+    right: 20px;
+    margin-top: 15px;
+    color: #6BCA66;
+}
