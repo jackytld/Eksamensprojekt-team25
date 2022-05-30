@@ -27,7 +27,7 @@ p img {
     top: 10px;
 }
 
-#rightarrow {
+#rightarrow, #rightarrow2, #rightarrow3, #rightarrow4 {
     position: absolute;
     right: 20px;
     margin-top: 15px;

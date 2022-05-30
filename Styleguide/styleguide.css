@@ -1,6 +1,3 @@
-
-/*det basale*/
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +6,7 @@
 body {
   background: #F1F8F8;
   color: #003A44;
-  font-family: arial;
+  font-family: Europa;
 }
 
 header {
@@ -17,25 +14,26 @@ header {
   padding: 50px;
 }
 
+header img {
+  margin-top: 30px;
+}
+
 h1 {
   font-weight: bold;
-  color: #003A44;
-  font-family: arial;
+  color: #FFF;
+  font-size: 60px;
 }
 
 h2 {
   font-weight: bold;
   color: #003A44;
-  font-family: arial;
 }
 
 p {
   color: #003A44;
-  font-family: arial;
   margin: 10px 0px;
 }
 
-/*det basale*/
 
 .beskrivelse {
   margin: 50px;
