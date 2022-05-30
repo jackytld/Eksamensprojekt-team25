@@ -39,69 +39,93 @@
         </div>
 
         <div class="billede">
-          <p>Hjem knap</p>
-          <img src="images/styleguide/Iconawesomehome.svg" alt="Hjem">
+          <p>Home knap - Orange = Aktiv, grå = inaktiv</p>
+          <img src="/images/icn_home_active.png" alt="Hjem">
         </div>
         <div class="kode">
-          <p>placer i html</p>
           <pre>
-            &lt;img src="images/styleguide/Iconawesomehome.svg" alt="Hjem"&gt;
+            &lt;img src="/images/icn_home_active.png" alt="Hjem"&gt;
           </pre>
         </div>
 
 
         <div class="billede">
-          <p>Kupon knap</p>
-          <img src="images/styleguide/Iconawesometicketalt.svg" alt="Kupon">
+          <p>El priser knap</p>
+          <img src="/images/icn_activity_inactive.png" alt="El priser">
         </div>
         <div class="kode">
-          <p>placer i html</p>
           <pre>
-            &lt;img src="images/styleguide/Iconawesometicketalt.svg" alt="Kupon"&gt;
+            &lt;img src="/images/icn_activity_inactive.png" alt="El priser"&gt;
           </pre>
         </div>
 
         <div class="billede">
-          <p>Sociale knap</p>
-          <img src="images/styleguide/Iconawesomeuserfriends.svg" alt="Sociale">
+          <p>Tips og Råd Knap</p>
+          <img src="/images/Icon material-lightbulb-outline.png" alt="Tips og Råd">
         </div>
         <div class="kode">
-          <p>placer i html</p>
           <pre>
-            &lt;img src="images/styleguide/Iconawesomeuserfriends.svg" alt="Sociale"&gt;
+            &lt;img src="/images/Icon material-lightbulb-outline.png" alt="Tips og Råd"&gt;
           </pre>
         </div>
 
         <div class="billede">
-          <p>Tilbage knap</p>
-          <img src="images/styleguide/Iconioniciosarrowback.svg" alt="Tilbage">
+          <p>Profil Knap</p>
+          <img src="/images/icn_profile_inactive.png" alt="Profil">
         </div>
         <div class="kode">
-          <p>placer i html</p>
           <pre>
-            &lt;img src="images/styleguide/Iconioniciosarrowback.svg" alt="Tilbage"&gt;
+            &lt;img src="/images/icn_profile_inactive.png" alt="Profil"&gt;
           </pre>
         </div>
 
         <div class="billede">
-          <p>Profil knap</p>
-          <img src="images/styleguide/Iconmaterialperson.svg" alt="Profil">
+          <p>Tilbage Knap</p>
+          <img src="/images/icn_back.png" alt="Tilbage">
         </div>
         <div class="kode">
-          <p>placer i html</p>
           <pre>
-            &lt;img src="images/styleguide/Iconmaterialperson.svg" alt="Profil"&gt;
+            &lt;img src="/images/icn_back.png" alt="Tilbage"&gt;
           </pre>
         </div>
 
         <div class="billede">
-          <p>Samlemærker knap</p>
-          <img src="images/styleguide/trophy.svg" alt="Samlemærker">
+          <p>Skift land knap</p>
+          <img src="/images/Icon-ionic-ios-flag.png" alt="Skift land">
         </div>
         <div class="kode">
-          <p>placer i html</p>
           <pre>
-            &lt;img src="images/styleguide/trophy.svg" alt="Samlemærker"&gt;
+            &lt;img src="/images/Icon-ionic-ios-flag.png" alt="Skift land"&gt;
+          </pre>
+        </div>
+
+        <div class="billede">
+          <p>Skift region knap</p>
+          <img src="/images/Icon-feather-map.png" alt="Skift region">
+        </div>
+        <div class="kode">
+          <pre>
+            &lt;img src="/images/Icon-feather-map.png" alt="Skift region"&gt;
+          </pre>
+        </div>
+
+        <div class="billede">
+          <p>Graf indstillinger knap</p>
+          <img src="/images/Icon-open-graph.png" alt="Graf indstillinger">
+        </div>
+        <div class="kode">
+          <pre>
+            &lt;img src="/images/Icon-open-graph.png" alt="Graf indstillinger"&gt;
+          </pre>
+        </div>
+
+        <div class="billede">
+          <p>Skift sprog knap</p>
+          <img src="/images/Icon-feather-globe.png" alt="Skift sprog">
+        </div>
+        <div class="kode">
+          <pre>
+            &lt;img src="/images/Icon-feather-globe.png" alt="Skift sprog"&gt;
           </pre>
         </div>
 
@@ -111,19 +135,28 @@
       <div class="navigation">
 
         <div class="beskrivelse">
-          <h2>Navigationsbare</h2>
-          <p>På appen/hjemmesiden har vi to navigationsbare. En i toppen og en i bunden. Den i toppen har en hjem og tilbage knad. Den i bunden har kuponer, sociale, profil og samlemærker knapper. I stedet for ord, vises der ikoner i vores navigationsbare. Navigationsbaren i bunden er sticky, så den sidder altid i bunden af skærmen også selvom man scroller.</p>
+          <h2>Navigationsbar</h2>
+          <p>Appen gør brug af en navigationsbar i bunden af skærmen som indeholder href's til home, elpriser, tips & råd og profil. Når et ikon er orange indikerer det hvilken side man er på i øjeblikket. I nedenståendes tilfælde så er man på home-siden:</p>
         </div>
-
-
 
         <div class="billede">
-          <p>Top navigationsbar</p>
-          <img src="images/styleguide/topnav.JPG" alt="Top navigationsbar">
+          <p>Navigationsbar</p>
+          <img src="/images/navbar.png" alt="navigationsbar">
         </div>
+
         <div class="kode">
           <p>Html</p>
           <pre>
+
+            &lt;div class="footer"&gt;
+              &lt;div class="icons"&gt;
+                &lt;a href="home.html"&gt; &lt;i class="fa-solid fa-house fa-xl"&gt;/i&gt; &lt;/a&gt;
+                &lt;a href="elpriser.html"&gt; &lt;i class="fa-solid fa-bolt fa-xl"&gt;&lt;/i&gt; &lt;/a&gt;
+                &lt;a href="#" id="active"&gt; &lt;i class="fa-solid fa-lightbulb fa-xl"&gt;&lt;/i&gt; &lt;/a&gt;
+                &lt;a href="#"&gt; &lt;i class="fa-solid fa-user fa-xl"&gt;&lt;/i&gt; &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+
             &lt;nav class="navtop" id="navtop"&gt;
               &lt;ul&gt;
                 &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/backarrowicon.svg" alt="Tilbage"&gt;&lt;/a&gt;&lt;/li&gt;
@@ -132,6 +165,7 @@
             &lt;/nav&gt;
           </pre>
           <p>Css</p>
+          
           <pre>
             .navtop {
               top: 0;
@@ -152,87 +186,6 @@
               height: 100px;
               margin: 30px;
             }
-          </pre>
-        </div>
-
-        <div class="billede">
-          <p>Bottom navigationsbar</p>
-          <img src="images/styleguide/bottomnav.JPG" alt="Bottom navigationsbar">
-        </div>
-        <div class="kode">
-          <p>Html</p>
-          <pre>
-            &lt;footer&gt;
-              &lt;nav class="nav" id="nav"&gt;
-                &lt;ul&gt;
-                  &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/couponicon.svg" alt="Kupon"&gt;&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/friendsicon.svg" alt="Venner"&gt;&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/profilicon.svg" alt="Profil"&gt;&lt;/a&gt;&lt;/li&gt;
-                  &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/badgeicon.svg" alt="Badge"&gt;&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/nav&gt;
-            &lt;/footer&gt;
-          </pre>
-          <p>Css</p>
-          <pre>
-            .nav {
-              position: fixed;
-              bottom: 0;
-              width: 100%;
-              background-color: #7499A3;
-            }
-
-            nav ul {
-              position: relative;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              list-style: none;
-
-            }
-
-            nav ul li a img {
-              width: 100px;
-              height: 100px;
-              margin: 30px;
-            }
-          </pre>
-          <p>Javascript</p>
-          <pre>
-            var nav = document.getElementById('nav');
-              window.onscroll = function () {
-
-                if(window.pageYOffset > 100) {
-
-                nav.style.position = "fixed";
-                nav.style.bottom = 0;
-
-              }else {
-                box.style.position = "absoulte";
-                box.style.bottom = 100;
-              }
-              }
-          </pre>
-        </div>
-        <div class="billede">
-          <p>Burger navigationsbar</p>
-          <img src="images/styleguide/burgernav.JPG" alt="Burger navigationsbar">
-        </div>
-
-        <div class="kode">
-          <p>Javascript</p>
-          <pre>
-            function toggleClassName() {
-              var sidebar = document.querySelector(".sidebar");
-              var toggle = document.querySelector(".toggle");
-              sidebar.classList.toggle("active");
-              toggle.classList.toggle("active");
-            }
-
-            window.addEventListener("scroll", function () {
-              var header = document.querySelector("header");
-              header.classList.toggle("sticky", window.scrollY > 0);
-            });
           </pre>
         </div>
 

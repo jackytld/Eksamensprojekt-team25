@@ -61,5 +61,6 @@ img {
 }
 
 .ikoner > .billede > img {
-  width: 80px;
+  width: 60px;
+  margin-left: 20px;
 }
