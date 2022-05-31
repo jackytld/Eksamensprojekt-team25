@@ -7,17 +7,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="profile-style.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/7d2692fb58.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <section id="settings-section" class="settings-section">
             <div class="profile-header">
+               <!------ Tilbage knap ------->
+        <a onclick="history.back()"> <i class="fa-solid fa-chevron-left" id="return"></i> </a>
               <div class="profile-header-top">
-                <div>9:41</div>
                 <div class="profile-icons">
-                  <img style="max-width: 18px;" src="images/signal.png" alt="signal iphone"/>
-                  <img style="max-width: 18px;" src="images/internet.png" alt="internet forbindelse"/>
-                  <img style="max-width: 18px;" src="images/full-battery.png" alt="batteri funktion"/>
                 </div>
               </div>
               <div class="profile-header-middle">
@@ -78,5 +78,17 @@
             </div>
         
           </section>  
+
+                                   <!----- Footer ----->
+
+<div class="footer">
+  <div class="icons">
+    <a href="home.html"> <i class="fa-solid fa-house fa-xl"></i> </a>
+    <a href="elpriser.html"> <i class="fa-solid fa-bolt fa-xl"></i> </a>
+    <a href="klima-index.html"> <i class="fa-solid fa-lightbulb fa-xl"></i> </a>
+    <a href="profile.html" id="active"> <i class="fa-solid fa-user fa-xl"></i> </a>
+  </div>
+</div>
+
     </body>
 </html>

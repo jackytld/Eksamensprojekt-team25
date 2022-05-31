@@ -6,6 +6,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="profile-style.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/7d2692fb58.js" crossorigin="anonymous"></script>
         <script src="script.js"></script>
     </head>
 
@@ -13,11 +15,7 @@
         <section id="profile-section" class="profile-section">
             <div class="profile-header">
               <div class="profile-header-top">
-                <div>9:41</div>
                 <div class="profile-icons">
-                  <img style="max-width: 18px;" src="images/signal.png" alt="signal på enhed"/>
-                  <img style="max-width: 18px;" src="images/internet.png" alt="forbindelse til net"/>
-                  <img style="max-width: 18px;" src="images/full-battery.png" alt="power paa mobil" />
                 </div>
 
               </div>
@@ -78,25 +76,24 @@
                </div>
             </div>
             
-            <div class="profile-bottom">
-              <div>
-                <a href="home.html"><img style="max-width:30px;" src="images/home.png" alt="hjem funktion" /></a>
-              </div>
-              <div>
-                <a href="elpriser.html"><img style="max-width:30px;" src="images/activity.png" alt="tjek aktivitet i appen"/></a>
-              </div>
-              <div>
-                <a href="klima-index.html"><img style="max-width:30px;" src="images/book.png" alt="find informationer"/></a>
-              </div>
-              <div>
-                <a href="profile.html"><img style="max-width:30px;" src="images/account.png" alt="min profil knap"/></a>
-              </div>
-            </div>
+ 
         
           </section>  
           
+          
           <div id="profile-overlay" class="profile-overlay" style="display:none"></div>
           
+                         <!----- Footer ----->
+
+<div class="footer">
+  <div class="icons">
+    <a href="home.html"> <i class="fa-solid fa-house fa-xl"></i> </a>
+    <a href="elpriser.html"> <i class="fa-solid fa-bolt fa-xl"></i> </a>
+    <a href="klima-index.html"> <i class="fa-solid fa-lightbulb fa-xl"></i> </a>
+    <a href="profile.html" id="active"> <i class="fa-solid fa-user fa-xl"></i> </a>
+  </div>
+</div>
+
     </body>
     
 </html>
