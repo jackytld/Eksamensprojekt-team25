@@ -22,14 +22,14 @@
 
     <div class="resume">
         <div class="dag">
-            <i class="fa-solid fa-bolt"></i>
+           <div id="bolt"><i class="fa-solid fa-bolt"></i></div> 
             <h2>93 kWh</h2>
             <p>I dag</p>
           
         </div>
     
         <div class="uge">
-            <i class="fa-solid fa-bell"></i>
+            <div id="bell"><i class="fa-solid fa-bell"></i></div>
             <h2>150 kWh</h2>
             <p>Denne uge</p>
           
@@ -38,10 +38,14 @@
     </div>
 
     <div>
-        <div class="arrow"><i class="fa-solid fa-arrow-left"></i> <h2 id="skift">16 Juni</h2><i class="fa-solid fa-arrow-right"></i></div>
+        <div class="arrow"><button id="arrow" onclick="change_text_back()"><i class="fa-solid fa-arrow-left"></i></button> <h2 id="skift">16 Juni</h2>   <button id="arrow" onclick="change_text()"><i class="fa-solid fa-arrow-right"></i></button>
          
          </div>
      
+
+      
+       
+
 
     <div class="container">
         <canvas id="myChart"></canvas>
@@ -49,8 +53,8 @@
     
     
     <script>
+
     let myChart = document.getElementById('myChart').getContext('2d');
-    
     
     
     let delayed; 
@@ -112,17 +116,85 @@
     }
 }
             
+
     
     }); 
     
     
     
-    </script>
+   
+function change_text(){
+    document.getElementById("skift").innerHTML = "17 Juni";
+    document.getElementById("myChart").innerHTML = "myChart";
+
+
+    let elChart = new Chart (myChart, {
+    type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+    data:{
+        labels:['0.00', '0.2', '0.4', '0.6', '0.8', '10', '12', '14', '16', '18', '20', '22'],
+        datasets:[{
+    label: 'Elpris',
+    backgroundColor: gradient,
+    pointBackgroundColor: "rgb(189, 195, 199)",
+    hitRadius: 30,
+        radius: 3,
+        hoverRadius: 15,
+        repsonsive: true,
+       
     
+    data:[
+    
+    2.00,
+    1.97,
+    1.89,
+    2.32,
+    2.05,
+    2.10,
+    1.85,
+    1.75,
+    2.05,
+    2.04,
+    1.88,
+    1.75
+    ],
+    
+        }]
+    },
+    options:{
+        legend: {
+            display: false
+        },
+        
+    scales: {
+        xAxes: [{
+            gridLines: {
+                drawOnChartArea: false
+            }
+        }],
+        yAxes: [{
+            gridLines: {
+                drawOnChartArea: false
+            }
+        }]
+    }
+}
+            
+
+    
+    }); 
+
+}
+
+function change_text_back(){
+    document.getElementById("skift").innerHTML = "16 Juni";
+}
+
+
+</script>
 
 
 <div class="noti"> 
-    <button id="mere">LÆS MERE</button>
+   <a href="klima-index.html"><button id="mere">LÆS MERE</button></a>
 </div>
 
 

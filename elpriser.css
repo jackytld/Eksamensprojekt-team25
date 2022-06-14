@@ -11,6 +11,20 @@ body{
     margin-top: 0px;
 }
 
+.top{
+    margin-top: 50px;
+}
+
+#bolt{
+    margin-top: 10px;
+    color: #62B2E0;
+}
+
+#bell{
+    margin-top: 10px;
+    color: #62B2E0;
+}
+
 
 .resume{
 display: flex;
@@ -33,10 +47,7 @@ box-sizing: border-box;
 box-shadow: 0 0 1px;
 }
 
-i{
-    margin-top: 10px;
-  color: #a4a5a5;
-}
+
 
 .uge{
     justify-content: center;
@@ -141,17 +152,13 @@ h2{
   }
 
 
-
-  .footer{
-    width: 100%;
-    height: 75px;
-    background-color: white;
-    color: #bababa;
-    box-shadow: 0px 0px 25px;
-    position: fixed;
-    bottom: 0;
-
+#arrow{
+    color: #a4a5a5;
+    border: none;
+    background-color: #F7F7F7;
 }
+
+
 
 .icons{
     display: flex;
