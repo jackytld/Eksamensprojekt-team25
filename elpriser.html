@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,110 +12,122 @@
 </head>
 <body>
     
-    <div class="top"></div>
+  
 
+<div class="top">
+
+    <h1 id="titel">Elpriser</h1>
+    <h2 id="dato">16 Juni 2022</h2>
+
+
+    <div class="resume">
+        <div class="dag">
+            <i class="fa-solid fa-bolt"></i>
+            <h2>93 kWh</h2>
+            <p>I dag</p>
+          
+        </div>
     
-<h1>Elpriser</h1>
-
-<div class="stats">
-
-    <button id="btn" class="dage">I dag</button>
-    <button class="dage">2 dage</button>
-    <button class="dage">1 uge</button>
-    <button class="dage">3 uger</button>
+        <div class="uge">
+            <i class="fa-solid fa-bell"></i>
+            <h2>150 kWh</h2>
+            <p>Denne uge</p>
+          
+        </div>
     
-</div>
-    
-
-<div class="container">
-    <canvas id="myChart"></canvas>
-</div>
-
-
-<script>
-let myChart = document.getElementById('myChart').getContext('2d');
-
-
-
-let delayed; 
-
-
-//gradient 
-let gradient = myChart.createLinearGradient(0,0,0,400);
-gradient.addColorStop( 0, "rgba(58, 123, 213, 1");
-gradient.addColorStop(1, "rgba(0, 210, 255, 0.3)");
-
-let elChart = new Chart (myChart, {
-type: 'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
-data:{
-    labels:['0.00', '0.2', '0.4', '0.6', '0.8', '10', '12', '14', '16', '18', '20', '22'],
-    datasets:[{
-label: 'Elpris',
-backgroundColor: gradient,
-pointBackgroundColor: "rgb(189, 195, 199)",
-hitRadius: 30,
-    radius: 3,
-    hoverRadius: 15,
-    repsonsive: true,
-   
-    scales: {
-      x: {
-        stacked: true,
-      },
-      y: {
-        stacked: true
-      }
-    },
-data:[
-
-2.00,
-1.97,
-2.09,
-2.32,
-2.14,
-2.02,
-1.72,
-1.55,
-2.02,
-2.04,
-1.88,
-1.75
-],
-
-    }]
-},
-options:{}
-
-
-
-}); 
-
-
-
-</script>
-
-
-<h1 class="undertitel">Forbrug</h1>
-
-<div class="info">
-<div class="gennemsnit">
-    <h2>Overblik</h2>
-    <div class="green">
-        <p id="kwh">175 øre kwh</p>
     </div>
+
+    <div>
+        <div class="arrow"><i class="fa-solid fa-arrow-left"></i> <h2 id="skift">16 Juni</h2><i class="fa-solid fa-arrow-right"></i></div>
+         
+         </div>
+     
+
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    
+    <script>
+    let myChart = document.getElementById('myChart').getContext('2d');
+    
+    
+    
+    let delayed; 
+    
+    
+    //gradient 
+    let gradient = myChart.createLinearGradient(0,0,0,400);
+    gradient.addColorStop( 0, "#6BCA66");
+    gradient.addColorStop(1, "rgba(0, 210, 255, 0.3)");
+    
+    let elChart = new Chart (myChart, {
+    type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+    data:{
+        labels:['0.00', '0.2', '0.4', '0.6', '0.8', '10', '12', '14', '16', '18', '20', '22'],
+        datasets:[{
+    label: 'Elpris',
+    backgroundColor: gradient,
+    pointBackgroundColor: "rgb(189, 195, 199)",
+    hitRadius: 30,
+        radius: 3,
+        hoverRadius: 15,
+        repsonsive: true,
+       
+    
+    data:[
+    
+    2.00,
+    1.97,
+    2.09,
+    2.32,
+    2.14,
+    2.02,
+    1.72,
+    1.55,
+    2.02,
+    2.04,
+    1.88,
+    1.75
+    ],
+    
+        }]
+    },
+    options:{
+        legend: {
+            display: false
+        },
+        
+    scales: {
+        xAxes: [{
+            gridLines: {
+                drawOnChartArea: false
+            }
+        }],
+        yAxes: [{
+            gridLines: {
+                drawOnChartArea: false
+            }
+        }]
+    }
+}
+            
+    
+    }); 
+    
+    
+    
+    </script>
+    
+
+
+<div class="noti"> 
+    <button id="mere">LÆS MERE</button>
 </div>
-<div class="forbrug">
-<h2>Hvad bruger mest strøm?</h2>
-<img src="images/apparater.png" alt="Danskernes elforbrug">
-</div>
+
 
 </div>
 
-
-<a href="#" class="notification">
-    <span>Få notifikationer</span>
-    <span class="badge"></span>
-  </a>
 
 <div class="footer">
     <div class="icons">
